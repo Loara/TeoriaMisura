@@ -1,2 +1,6 @@
 # TeoriaMisura
-Appunti condivisi sulla teoria geometrica della misura
+Questo progetto nasce dal voler fornire a tutti gli studenti di Matematica e non, purché interessati, delle dispense libere e gratuite sulla teoria geometrica della misura.
+
+Chiunque è invitato a contribuire alla stesura degli appunti, sia completando le sezioni vuote già presenti sia proponendo nuovi argomenti inerenti alla teoria geometrica della misura utili all'apprendimento. Si ricordi di fornire, insieme al proprio contributo, anche le opportune referenze bibliografiche che dovranno poi essere aggiunte al documento finale.
+
+Il documento sarà scritto interamente in LaTeX mentre la bibliografia sarà generata con Biblatex/Biber.
