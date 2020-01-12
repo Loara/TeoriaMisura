@@ -1,0 +1,116 @@
+\newcommand{\virg}[1]{``#1''}
+\newcommand{\mdf}{\overset{\mathrm{def}}{=}}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Sn}[1]{\mathbb{S}^{#1}} %Sfera n dimensionale
+
+\newcommand{\inv}[1]{{#1}^{-1}}
+\DeclareMathOperator*{\lcm}{lcm}
+\DeclareMathOperator{\spann}{span}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\sign}{sign}
+
+\newcommand{\open}[1]{{#1}^\circ}
+\newcommand{\closed}[1]{\overline{#1}}
+
+\newcommand*{\gbal}[3]{{#1}_{#3}\xpar{#2}}
+\newcommand*{\gubal}[2]{{#1}\xpar{#2}}
+\newcommand*{\obal}[2]{\gbal{B}{#1}{#2}}
+\newcommand*{\cbal}[2]{\gbal{D}{#1}{#2}}
+
+\newcommand{\ooint}[2]{\left({#1},{#2}\right)}
+\newcommand{\ocint}[2]{\left({#1},{#2}\right]}
+\newcommand{\coint}[2]{\left[{#1},{#2}\right)}
+\newcommand{\ccint}[2]{\left[{#1},{#2}\right]}
+
+\newcommand*{\set}[1]{\left\{{#1}\right\}}
+\newcommand*{\fun}[3]{{#1}:{#2}\rightarrow {#3}}
+\newcommand*{\anfun}[2]{{#1}\rightarrow {#2}} %funzione anonima
+\newcommand*{\xpar}[1]{\left( #1\right)}
+\newcommand*{\xcpar}[1]{\left[ #1\right]}
+\newcommand*{\iset}[2]{\left\{{#1}\mathrel{}\middle\vert\mathrel{}{#2}\right\}}
+\newcommand*{\sdiff}[2]{{#1}\Delta{#2}} %differenza simmetrica
+\newcommand*{\partset}[1]{\mathscr{P}\left({#1}\right)}
+\newcommand*{\graph}[1]{\mathcal{G}_{#1}}
+\newcommand*{\card}[1]{\#\xpar{#1}}
+\newcommand*{\scalar}[2]{\left\langle {#1}, {#2}\right\rangle}
+
+\providecommand*{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand*{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand*{\conj}[1]{\overline{#1}}
+\newcommand{\divd}{\mid}
+\newcommand{\ndivd}{\nmid}
+
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\trc}{tr}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\vspan}{span}
+\newcommand*{\idx}[1]{\id_{#1}}
+\newcommand*{\rstr}[2]{\left.{#1}\right|_{#2}}
+
+\DeclareMathOperator{\dive}{div}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\dist}{dist}
+
+\newcommand{\ccomp}{\subset\subset}
+\newcommand*{\fcar}[1]{\mathcal{X}_{#1}}
+
+\DeclareMathOperator{\Rez}{Re}
+\DeclareMathOperator{\Imz}{Im}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\Exp}{Exp}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Ind}{Ind}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\supp}{supp}
+
+\def\Xint#1{\mathchoice
+   {\XXint\displaystyle\textstyle{#1}}%
+   {\XXint\textstyle\scriptstyle{#1}}%
+   {\XXint\scriptstyle\scriptscriptstyle{#1}}%
+   {\XXint\scriptscriptstyle\scriptscriptstyle{#1}}%
+   \!\int}
+\def\XXint#1#2#3{{\setbox0=\hbox{$#1{#2#3}{\int}$}
+     \vcenter{\hbox{$#2#3$}}\kern-.5\wd0}}
+\def\ddashint{\Xint=}
+\def\dashint{\Xint-}
+
+\newcommand*{\integral}[3]{\int_{#1}{{#2}\, d #3}} %integrale
+\newcommand*{\vintegral}[4]{\int_{#1}{{#2}\, d {#4}\xpar{#3}}} %integrale con variabile dipendente (#3)
+\newcommand*{\mintegral}[3]{\dashint_{#1}{{#2}\, d #3}} %integrale
+\newcommand*{\vmintegral}[4]{\dashint_{#1}{{#2}\, d {#4}\xpar{#3}}} %integrale con variabile dipendente (#3)
+\newcommand*{\cfu}[1]{C^{#1}}
+\newcommand*{\hfu}[2]{C^{{#1}, {#2}}}
+\newcommand*{\ccfu}[1]{C^{#1}_c}
+\newcommand{\cf}{C}
+\newcommand{\ccf}{C_c}
+\newcommand*{\Lp}[1]{L^{#1}}
+\newcommand*{\Lpl}[1]{L^{#1}_{loc}}
+\newcommand*{\Borel}[1]{\mathcal{B}^{#1}}
+
+\DeclareMathOperator{\Lip}{Lip}
+\newcommand*{\sob}[2]{W^{{#1},{#2}}}
+\newcommand*{\sobo}[2]{W^{{#1},{#2}}_0}
+\DeclareMathOperator{\BV}{BV}
+\newcommand*{\resmes}{\mathbin{\mathsf{L}}} 
+\newcommand*{\redb}[1]{\partial^*{#1}} %Frontiera ridotta
+\newcommand*{\essb}[1]{\partial_*{#1}} %Frontiera essenziale
+
+\newcommand*{\Lm}[1]{\abs{#1}} %misura di Lebesgue
+\newcommand*{\Lms}[1]{\mathcal{L}^{#1}}
+\newcommand*{\Hms}[1]{\mathcal{H}^{#1}}
+\newcommand*{\perim}[1]{P\left({#1}\right)}
+\newcommand*{\xperim}[2]{P\left({#1};{#2}\right)}
+\DeclareMathOperator{\diam}{diam}
+\newcommand*{\tsp}[2]{\text{Tan}\xpar{#1, #2}}
+\newcommand*{\dcon}{\rightharpoonup}
+\newcommand*{\dstar}{\overset{*}{\rightharpoonup}}
+\newcommand*{\mass}[1]{\mathbb{M}\xpar{#1}}
+
